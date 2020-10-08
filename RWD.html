@@ -1,0 +1,47 @@
+<!-- create new html code with a key short cut '!' -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- this meta tag initiates the responsiveness of the page -->
+    <meta name='viewport' content='width=device-width initial-scale= 1.0'>
+    <!-- the mata name used is 'viewport' -->
+    <!-- the content type is width of the device and an initial zoom of 1.0 -->
+    <title>Document</title>
+    <style>
+        /* always include media queries at the bottom of the styles */
+        #RWD{
+background-color: blue;
+padding: 10px;
+
+        }
+        #NONRWD{
+background-color: blue;
+padding: 10px;
+        }
+
+        /* media query */
+        /* increase the pixel amount to see changes */
+        /* 900 for tablets and above */
+        @media screen and (min-width: 900px){
+            #RWD{
+                background-color: brown;
+                color: chartreuse;
+            }
+        }
+        /* this one is with max-width */
+        /*@media screen and (max-width: 400px){
+            #RWD{
+                background-color: brown;
+                color: chartreuse;
+            }
+        }*/
+        /* done */
+    </style>
+</head>
+<body>
+    <!-- assign id's -->
+    <h1 id="RWD">Hello World</h1>
+    <h1 id="NONRWD">Hello World</h1>
+</body>
+</html>
